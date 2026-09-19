@@ -34,3 +34,4 @@ export const getHeroesByPageAction = async (
     heroes: heroes,
   };
 };
+
