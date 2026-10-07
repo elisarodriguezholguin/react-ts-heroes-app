@@ -16,4 +16,4 @@ export const HeroStatCard = ({ title, icon, children }: Props) => {
       <CardContent>{children}</CardContent>
     </Card>
   );
-};
+}

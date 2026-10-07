@@ -10,7 +10,7 @@ import { CustomBreadcrumbs } from '@/components/custom/CustomBreadcrumbs';
 
 import { useHeroSummary } from '@/heroes/hooks/useHeroSummary';
 import { usePaginatedHero } from '@/heroes/hooks/usePaginatedHero';
-import { FavoriteHeroContext } from '@/heroes/context/FavoriteHeroContext';
+import { FavoriteHeroContext } from '@/heroes/Context/FavoriteHeroContext';
 
 export const HomePage = () => {
   const [searchParams, setSearchParams] = useSearchParams();

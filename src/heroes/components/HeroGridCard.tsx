@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import type { Hero } from '../types/hero.interface';
-import { FavoriteHeroContext } from '../context/FavoriteHeroContext';
+import { FavoriteHeroContext } from '../Context/FavoriteHeroContext';
 
 interface Props {
   hero: Hero;

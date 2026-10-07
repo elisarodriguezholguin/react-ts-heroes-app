@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router';
 import { Search, Filter, SortAsc, Grid, Plus } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/components/ui/Input';
 import { Slider } from '@/components/ui/slider';
 import {
   Accordion,
