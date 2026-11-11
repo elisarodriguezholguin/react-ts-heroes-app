@@ -148,5 +148,6 @@ describe('HeroStats', () => {
 
     const favoriteCountElement = screen.getByTestId('favorite-count');
     expect(favoriteCountElement.innerHTML).toContain('1');
+  
   });
 });

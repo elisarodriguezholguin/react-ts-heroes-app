@@ -13,7 +13,6 @@ import {
 } from '@/components/ui/accordion';
 
 export const SearchControls = () => {
-  // const [query, setQuery] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -59,10 +58,6 @@ export const SearchControls = () => {
             onClick={() => {
               if (activeAccordion === 'advance-filters') {
                 setQueryParams('active-accordion', '');
-                // setSearchParams((prev) => {
-                //   prev.delete('active-accordion');
-                //   return prev;
-                // });
                 return;
               }
 
@@ -90,7 +85,12 @@ export const SearchControls = () => {
       </div>
 
       {/* Advanced Filters */}
-      <Accordion type="single" collapsible value={activeAccordion}>
+      <Accordion
+        type="single"
+        collapsible
+        value={activeAccordion}
+        data-testid="accordion"
+      >
         <AccordionItem value="advance-filters">
           {/* <AccordionTrigger>Filtros avanzados</AccordionTrigger> */}
           <AccordionContent>
